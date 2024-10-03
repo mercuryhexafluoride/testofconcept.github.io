@@ -1,0 +1,188 @@
+
+:root {
+  --color-bg: #410b75;
+  --color-text-main: #000000;
+  --color-primary: #ffff00;
+  --wrapper-height: 87vh;
+  --image-max-width: 300px;
+  --image-margin: 3rem;
+  --font-family: "monospace";
+  --font-family-header: "monospace";
+}
+
+
+* {
+  box-sizing: border-box;
+}
+[hidden] {
+  display: none !important;
+}
+
+
+@font-face {
+  font-family: monospace;
+  src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Regular.otf?v=1603136326027")
+    format("opentype");
+}
+@font-face {
+  font-family: monospace;
+  font-weight: bold;
+  src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Bold.otf?v=1603136323437")
+    format("opentype");
+}
+
+
+
+
+/******************************************************************************
+END Glitch hello-app default styles
+******************************************************************************/
+
+body {
+  font-family: monospace;
+  background-color: var(--color-bg);
+  color: #2ceee9;
+}
+
+/* Instructions */
+.instructions {
+  margin: 1rem auto 0;
+}
+
+/
+
+/* Subheading */
+h2 {
+  color: White;
+  font-size: 32px;
+}
+
+
+
+.header {
+  height: calc(25vh);
+  background-color: #410b75;
+  position:absolute;
+  top:0px;
+  left:0px;
+  width: calc(85vw);
+}
+.nav {
+  height: calc(525vh);
+  position:absolute;
+  top: calc(25vh);
+  left:0px;  
+  background-color: #331b4b;
+  width: calc(85vw);
+}
+.main {
+  position: absolute;
+  top: calc(50vh);
+  left: calc(20vw);
+  display: table;
+  height: calc(500vh);
+  width: calc(65vw);
+  background-color: #170d7a;
+
+  color: White;
+}
+/*This was a test, ignore it*/.side-left {
+  order: 1;
+  background-color: yellow;
+  display: flex;
+  flex-flow: row wrap;
+  text-align: center;
+}
+/*This was a test, ignore it*/.side-right {
+  order: 2;
+  background-color: green;
+  display: flex;
+  flex-flow: row wrap;
+  text-align: center;
+}
+.footer {
+  position:absolute;
+  top:calc(575vh);
+  left:0px;
+  height: calc(25vh);
+  width:calc(85vw);
+  background-color: #000000;
+  flex-flow: row wrap;
+  text-align: center;
+   padding: 0px 0px;
+  
+ 
+}
+
+a:link {
+  color: white;
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #a1e3da;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #00bcd0;
+}
+
+a:active {
+  text-decoration: underline;
+}
+img {
+  width: 80%;
+  height: auto;
+}
+
+aside {
+  position: fixed;
+ 
+  background-color: #2c5edb;
+  top: 0px;
+  right: 0px;
+  height: calc(100vh);
+  width: calc(15vw);
+}
+aside2 {
+  position: absolute;
+  background-color: #2c5edb;
+  top: calc(50vh);
+  background-image: url("https://stsci-opo.org/STScI-01H2TX9HDRY87KFD082A74YADF.jpg");
+  background-repeat: repeat;
+   background-size: cover;
+  left: 0px;
+  height: calc(500vh);
+  width: calc(20vw);
+  background-position: center;
+}
+input {
+  background-color: #1e5f9c;
+  border: none;
+  color: white;
+  width: calc(15vw);
+  height: calc(20vh);
+  padding: 0px 0px;
+  text-align: CENTER; 
+  text-decoration: none;
+  transition-duration: 0.3s;
+  display: inline-block;
+  font-size: 4vh;
+  font-family: monospace;
+}
+input:hover {
+  background-color: #a8cced;
+  border: none;
+  color: blue;
+  width:calc(15vw);
+  height: calc(20vh);
+  padding: 0px 0px;
+  text-align: center;
+  transition-duration: 0.3s;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 4vh;
+  font-family: monospace;
+}
