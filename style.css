@@ -1,0 +1,585 @@
+:root {
+  --color-bg: #09edc3;
+  --color-text-main: #000000;
+  --color-primary: #ffff00;
+  --wrapper-height: 87vh;
+  --image-max-width: 300px;
+  --image-margin: 3rem;
+  --font-family: "monospace";
+  --font-family-header: "monospace";
+}
+
+* {
+  box-sizing: border-box;
+}
+[hidden] {
+  display: none !important;
+}
+
+@font-face {
+  font-family: monospace;
+  src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Regular.otf?v=1603136326027")
+    format("opentype");
+}
+@font-face {
+  font-family: monospace;
+  font-weight: bold;
+  src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Bold.otf?v=1603136323437")
+    format("opentype");
+}
+
+/******************************************************************************
+END Glitch hello-app default styles
+******************************************************************************/
+
+body {
+  font-family: monospace;
+  background-color: var(--color-bg);
+  color: #2ceee9;
+}
+
+/* Instructions */
+.instructions {
+  margin: 1rem auto 0;
+}
+
+/
+
+/* Subheading */
+h2 {
+  color: White;
+  font-size: 32px;
+}
+
+.header {
+  height: calc(25vh);
+  background-color: #09edc3;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: calc(80vw);
+  color:#db2f09
+}
+.nav {
+  height: calc(225vh);
+  position: absolute;
+  top: calc(25vh);
+  left: 0px;
+  background-color: #331b4b;
+  width: calc(85vw);
+}
+.main {
+  position: absolute;
+  top: calc(50vh);
+  left: calc(10vw);
+  display: table;
+  height: calc(425vh);
+  width: calc(70vw);
+  background-color: #f71505;
+  color: White;
+}
+.mainbord {
+  position: absolute;
+  top: calc(50vh);
+  left: calc(10vw);
+  display: table;
+  height: calc(200vh);
+  width: calc(70vw);
+  background-color: #0f3dbd;
+  color: White;
+}
+.article {
+  position: absolute;
+  top: calc(50vh);
+  left: calc(25vw);
+  display: table;
+  height: calc(400vh);
+  width: calc(55vw);
+  background-color: #0f3dbd;
+
+  color: White;
+}
+.articlesmall {
+  position: absolute;
+  top: calc(50vh);
+  left: calc(25vw);
+  display: table;
+  height: calc(250vh);
+  width: calc(55vw);
+  background-color: #0f3dbd;
+
+  color: White;
+}
+
+.articlesmallcontact {
+  position: absolute;
+  top: calc(25vh);
+  left: calc(25vw);
+  display: table;
+  height: calc(200vh);
+  width: calc(55vw);
+  background-color: #0f3dbd;
+
+  color: White;
+}
+
+.footer {
+  position: absolute;
+  top: calc(475vh);
+  left: 0px;
+  height: calc(25vh);
+  width: calc(80vw);
+  background-color: #000000;
+
+  text-align: center;
+  padding: 0px 0px;
+}
+.footersmall {
+  position: absolute;
+  top: calc(325vh);
+  left: 0px;
+  height: calc(25vh);
+  width: calc(80vw);
+  background-color: #000000;
+
+  text-align: center;
+  padding: 0px 0px;
+}
+.footersmallcontact {
+  position: absolute;
+  top: calc(250vh);
+  left: 0px;
+  height: calc(25vh);
+  width: calc(80vw);
+  background-color: #000000;
+
+  text-align: center;
+  padding: 0px 0px;
+}
+a:link {
+  color: white;
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #a1e3da;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #00bcd0;
+}
+
+a:active {
+  text-decoration: underline;
+}
+.img {
+  width: 80%;
+  height: auto;
+  border-radius: 3%;
+}
+.largeimg {
+  width: 100%;
+  height: auto;
+}
+.contactform {
+  border-radius: 50%;
+  font-size: 4vh;
+}
+
+aside {
+  position: fixed;
+
+  background-color: #2c5edb;
+  top: 0px;
+  left: calc(80vw);
+  height: calc(100vh);
+  width: calc(20vw);
+  z-index: 5;
+}
+.aside2bordmain {
+  position: absolute;
+  background-color: #2c5edb;
+  top: calc(50vh);
+  background-image: url("https://stsci-opo.org/STScI-01HBVHYJFJXPSW7PG3D9GE9G4D.png");
+  background-repeat: repeat;
+  background-size: cover;
+  left: 0px;
+  height: calc(200vh);
+  width: calc(10vw);
+  background-position: center;
+}
+.aside2bord {
+  position: absolute;
+  background-color: #2c5edb;
+  top: calc(50vh);
+  background-image: url("https://stsci-opo.org/STScI-01HBVHYACKXBP5Y9R50MAEQYKR.png");
+  background-repeat: repeat;
+  background-size: cover;
+  left: 0px;
+  height: calc(425vh);
+  width: calc(10vw);
+  background-position: center;
+}
+.aside2bordtest {
+  position: absolute;
+  background-color: #2c5edb;
+  top: calc(50vh);
+  background-image: url("https://stsci-opo.org/STScI-01HBVHYACKXBP5Y9R50MAEQYKR.png");
+  background-repeat: repeat;
+  background-size: cover;
+  left: 0px;
+  height: calc(400vh);
+  width: calc(25vw);
+  background-position: center;
+}
+.aside2bordtestsmall {
+  position: absolute;
+  background-color: #2c5edb;
+  top: calc(50vh);
+  background-image: url("https://stsci-opo.org/STScI-01HQK9C8HHBQ275Y9C4CVH0RBN.png");
+  background-repeat: repeat;
+  background-size: cover;
+  left: 0px;
+  height: calc(250vh);
+  width: calc(25vw);
+  background-position: center;
+}
+.aside2bordtestsmallcontact {
+  position: absolute;
+  background-color: #2c5edb;
+  top: calc(25vh);
+  background-image: url("https://stsci-opo.org/STScI-01HQK9C8HHBQ275Y9C4CVH0RBN.png");
+  background-repeat: repeat;
+  background-size: cover;
+  left: 0px;
+  height: calc(200vh);
+  width: calc(25vw);
+  background-position: center;
+}
+.nav1 {
+  background-color: #099cdb;
+  position: absolute;
+  border: none;
+  color: white;
+  width: calc(20vw);
+  height: calc(25vh);
+  left: 0px;
+  top: 0px;
+  padding: 0px 0px;
+  text-align: center;
+  text-decoration: none;
+  transition-duration: 0.3s;
+  display: inline-block;
+  font-size: 4vh;
+  font-family: monospace;
+}
+.nav1:hover {
+  background-color: #099cdb;
+  border: none;
+  color: blue;
+  width: calc(20vw);
+  height: calc(22vh);
+  padding: 0px 0px;
+  text-align: center;
+  transition-duration: 0.3s;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 4vh;
+  font-family: monospace;
+}
+.nav2 {
+  background-color: #099cdb;
+  position: absolute;
+  border: none;
+  color: white;
+  width: calc(20vw);
+  height: calc(25vh);
+  top: 0px;
+  left: calc(20vw);
+  padding: 0px 0px;
+  text-align: CENTER;
+  text-decoration: none;
+  transition-duration: 0.3s;
+  display: inline-block;
+  font-size: 4vh;
+  font-family: monospace;
+}
+.nav2:hover {
+  background-color: #a8cced;
+  position: absolute;
+  border: none;
+  color: blue;
+  width: calc(20vw);
+  height: calc(22vh);
+  padding: 0px 0px;
+  text-align: center;
+  transition-duration: 0.3s;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 4vh;
+  font-family: monospace;
+}
+.nav3 {
+  background-color: #099cdb;
+  position: absolute;
+  border: none;
+  color: white;
+  width: calc(20vw);
+  height: calc(25vh);
+  left: calc(40vw);
+  top: 0px;
+  padding: 0px 0px;
+  text-align: center;
+  text-decoration: none;
+  transition-duration: 0.3s;
+  display: inline-block;
+  font-size: 4vh;
+  font-family: monospace;
+}
+.nav3:hover {
+  background-color: #a8cced;
+  border: none;
+  color: blue;
+  width: calc(20vw);
+  height: calc(22vh);
+  left: calc(40vw);
+  padding: 0px 0px;
+  text-align: center;
+  transition-duration: 0.3s;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 4vh;
+  font-family: monospace;
+}
+.nav4 {
+  background-color: #099cdb;
+  position: absolute;
+  border: none;
+  color: white;
+  width: calc(20vw);
+  height: calc(25vh);
+  top: 0px;
+  left: calc(60vw);
+  padding: 0px 0px;
+  text-align: CENTER;
+  text-decoration: none;
+  transition-duration: 0.3s;
+  display: inline-block;
+  font-size: 4vh;
+  font-family: monospace;
+}
+.nav4:hover {
+  background-color: #a8cced;
+  position: absolute;
+  border: none;
+  color: blue;
+  width: calc(20vw);
+  height: calc(22vh);
+  left: calc(60vw);
+  padding: 0px 0px;
+  text-align: center;
+  transition-duration: 0.3s;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 4vh;
+  font-family: monospace;
+}
+.aside1 {
+  background-color: #156a8f;
+  position: absolute;
+  border: none;
+  color: white;
+  width: calc(20vw);
+  height: calc(20vh);
+  left: 0px;
+  top: calc(20vh);
+  padding: 0px 0px;
+  text-align: center;
+  text-decoration: none;
+  transition-duration: 0.3s;
+  display: inline-block;
+  font-size: 4vh;
+  font-family: monospace;
+}
+.aside1:hover {
+  background-color: #156a8f;
+  border: none;
+  color: blue;
+  width: calc(16.5vw);
+  height: calc(20vh);
+  padding: 0px 0px;
+  text-align: center;
+  transition-duration: 0.3s;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 4vh;
+  font-family: monospace;
+}
+.aside2 {
+  background-color: #156a8f;
+  position: absolute;
+  border: none;
+  color: white;
+  width: calc(20vw);
+  height: calc(20vh);
+  top: calc(40vh);
+  left: 0px;
+  padding: 0px 0px;
+  text-align: CENTER;
+  text-decoration: none;
+  transition-duration: 0.3s;
+  display: inline-block;
+  font-size: 4vh;
+  font-family: monospace;
+}
+.aside2:hover {
+  background-color:#156a8f;
+  position: absolute;
+  border: none;
+  color: blue;
+  width: calc(16.5vw);
+  height: calc(20vh);
+  padding: 0px 0px;
+  text-align: center;
+  transition-duration: 0.3s;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 4vh;
+  font-family: monospace;
+}
+.aside3 {
+  background-color: #156a8f;
+  position: absolute;
+  border: none;
+  color: white;
+  width: calc(20vw);
+  height: calc(20vh);
+  left: 0px;
+  top: calc(60vh);
+  padding: 0px 0px;
+  text-align: center;
+  text-decoration: none;
+  transition-duration: 0.3s;
+  display: inline-block;
+  font-size: 4vh;
+  font-family: monospace;
+}
+.aside3:hover {
+  background-color: #156a8f;
+  border: none;
+  color: blue;
+  top: calc(60vh);
+  width: calc(16.5vw);
+  height: calc(20vh);
+  left: 0px;
+  padding: 0px 0px;
+  text-align: center;
+  transition-duration: 0.3s;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 4vh;
+  font-family: monospace;
+}
+.aside4 {
+  background-color: #156a8f;
+  position: absolute;
+  border: none;
+  color: white;
+  width: calc(20vw);
+  height: calc(20vh);
+  top: calc(80vh);
+  left: 0px;
+  padding: 0px 0px;
+  text-align: CENTER;
+  text-decoration: none;
+  transition-duration: 0.3s;
+  display: inline-block;
+  font-size: 4vh;
+  font-family: monospace;
+}
+.aside4:hover {
+  background-color: #156a8f;
+  position: absolute;
+  border: none;
+  color: blue;
+  width: calc(16.5vw);
+  height: calc(20vh);
+  left: 0px;
+  top: calc(80vh);
+  padding: 0px 0px;
+  text-align: center;
+  transition-duration: 0.3s;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 4vh;
+  font-family: monospace;
+}
+.newsletter {
+  background-color: #099cdb;
+  position: absolute;
+  border: none;
+  color: white;
+  width: calc(15vw);
+  height: calc(10vh);
+  top: calc(0vh);
+  left: calc(60vw);
+  padding: 0px 0px;
+  text-align: CENTER;
+  text-decoration: none;
+  transition-duration: 0.3s;
+  display: inline-block;
+  font-size: 4vh;
+  font-family: monospace;z-index: 5;
+}
+.newsletter:hover {
+  background-color: #a8cced;
+  position: absolute;
+  border: none;
+  color: blue;
+  width: calc(15vw);
+  height: calc(10vh);
+   top: 0px;
+  left: calc(60vw);
+  padding: 0px 0px;
+  text-align: center;
+  transition-duration: 0.3s;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 4vh;
+  font-family: monospace;z-index: 5;
+}
+button {
+  background-color: #099cdb;
+  position: absolute;
+  border: none;
+  color: white;
+  width: calc(20vw);
+  height: calc(20vh);
+  left: 0px;
+  top: 0px;
+  padding: 0px 0px;
+  text-align: center;
+  text-decoration: none;
+  transition-duration: 0.3s;
+  display: inline-block;
+  font-size: 4vh;
+  font-family: monospace;
+}
+.logo {
+  height: calc(17vh);
+  position: absolute;
+  top: calc(2vh);
+  left: calc(10vw - calc(22.6vh / 2));
+  width: auto;
+  display: block;
+  margin: auto;
+}
+.input {
+  height: calc(3.5vh);
+  width: calc(30vw);
+  background-color: #3cbc8d;
+  color: red;
+  font-family: monospace;
+}
