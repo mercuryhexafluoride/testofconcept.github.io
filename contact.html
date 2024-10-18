@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- 
+      This is an HTML comment
+      You can write text in a comment and the content won't be visible in the page
+    -->
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+
+    <title>Contact CategralWaves</title>
+
+    <!-- The website stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- The website JavaScript file -->
+    <script>
+      function about() {
+        window.open("about.html", "_self");
+      }
+      function joblink() {
+        window.open("joblink.html", "_self");
+      }
+      function Products() {
+        window.open("products.html", "_self");
+      }
+      function Contact() {
+        window.open("contact.html", "_self");
+      }
+    </script>
+    <style>
+      h3 {
+        text-align: center;
+      }
+      p {
+        text-align: center;
+      }
+      div {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 style="font-size: 10vh" class="header">
+        <center>Contact Us</center>
+      </h1>
+    </header>
+    <div class="nav">
+      <nav>
+        <h3 style="font-size: 5.5vh">
+          <div>
+            <form>
+              <input
+                class="nav1"
+                type="button"
+                value="About"
+                onclick="about()"
+              />
+              <input
+                class="nav2"
+                type="button"
+                value="Jobs"
+                onclick="joblink()"
+              />
+              <input
+                class="nav3"
+                type="button"
+                value="Products"
+                onclick="Products()"
+              />
+              <input
+                class="nav4"
+                type="button"
+                value="Contact Us"
+                onclick="Contact()"
+              />
+            </form>
+          </div>
+        </h3>
+      </nav>
+    </div>
+
+    <div class="articlesmall">
+      <h2 style="font-size: 4.5vh">Why Contact us?</h2>
+      <img
+        src="https://www.nasa.gov/wp-content/uploads/2021/10/microsoftteams-image-77.jpg"
+        class="img"
+        alt="The Hadron Collider"
+        title="The Hadron collider is currently the most powerful particle accelerator in existance. "
+      />
+
+      <p style="font-size: 3.5vh">You may want to contact us because...</p>
+      <ul style="font-size: 3vh">
+        <li>You wish to register for a job</li>
+        <li>
+          You or your organization would like to purchase a product or data
+        </li>
+        <li>You would like to commission physicists for a project</li>
+      </ul>
+      <p style="font-size: 3.5vh">
+        Email = Contact@CategralWaves.Org<br />
+        Address = 110 Richmond Street, Toronto, ON, Canada<br /><br /><br />
+        A form is listed below if you don't have any of the platforms listed
+        above
+      </p>
+      <p style="font-size: 3.5vh">Why are you contacting us</p>
+      <form class="contactform" action="/sent.html ">
+        <br />
+        <input
+          type="radio"
+          id="Job Registration"
+          name="Reason"
+          value="Job Registration"
+        />
+        <label for="Job Registration">Job Registration</label><br />
+        <input
+          type="radio"
+          id="Product Purchase"
+          name="Reason"
+          value="Product Purchase"
+        />
+        <label for="Product Purchase">Product Purchase</label><br />
+
+        <input
+          type="radio"
+          id="Commission Physicists"
+          name="Reason"
+          value="Commission Physicists"
+        />
+        <label for="Commission Physicists">Commission Physicists</label>
+        <br /><br />
+        <label for="fname">First name:</label>
+        <input class="input" type="text" id="fname" name="fname" value="" /><br>
+        <label for="lname">Last name:</label>
+        <input class="input" type="text" id="lname" name="lname" value="" /><br />
+        <label for="email">Email adr:</label>
+        <input class="input" type="text" id="Email" name="Email" value="" /><br />
+        <p>A short description of your request</p>
+        <textarea name="message" style="width: calc(50vw); height: calc(50vh)">
+        </textarea
+        ><br />
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+    <div>
+      <aside>
+        <h3 style="font-size: 5vh" {text-align:center;}class="nav">
+          <center>
+            <a href="https://categralwaves.glitch.me" target="_self">
+              <img
+                src="https://cdn.glitch.global/1e62be43-de7c-44af-ae99-6e7b231e13bc/Logo.png?v=1717605232364"
+                class="logo"
+                alt="the logo of CategralWaves"
+              />
+            </a>
+            <form>
+              <input
+                class="aside1"
+                type="button"
+                value="About"
+                onclick="about()"
+              />
+              <input
+                class="aside2"
+                type="button"
+                value="Jobs"
+                onclick="joblink()"
+              />
+              <input
+                class="aside3"
+                type="button"
+                value="Products"
+                onclick="Products()"
+              />
+              <input
+                class="aside4"
+                type="button"
+                value="Contact Us"
+                onclick="Contact()"
+              />
+            </form>
+          </center>
+        </h3>
+      </aside>
+    </div>
+    <div><aside2 class="aside2bordtestsmall"> </aside2></div>
+    <div>
+      <footer style="background-color: black" class="footersmall" font-size:3vw>
+        <p></p>
+        <!--sef-->
+      </footer>
+    </div>
+  </body>
+</html>
